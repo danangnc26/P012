@@ -66,10 +66,6 @@
               </table>
         </div>
         <!-- /.box-body -->
-        <div class="box-footer">
-          Footer
-        </div>
-        <!-- /.box-footer-->
       </div>
       <!-- /.box -->
 
@@ -88,7 +84,7 @@
 		      null,
 		      { "bSortable": false}
         	],
-        	"order" : [1, "asc"],
+        	"order" : [0, "asc"],
     });
     // $('#example2').DataTable({
     //   "paging": true,

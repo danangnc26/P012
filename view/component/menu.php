@@ -7,21 +7,21 @@
       <ul class="sidebar-menu">
         <li class="header">NAVIGASI</li>
         <li><a href="<?php echo app_base.'show_welcome' ?>"><i class="fa fa-dashboard"></i> <span>Home</span></a></li>
+         <?php
+            if($_SESSION['level_user'] == 'Super Admin'){
+            ?>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-folder-open"></i> <span>Master</span> <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
-            <?php
-            if($_SESSION['level_user'] == 'Super Admin'){
-            ?>
             <li><a href="<?php echo app_base.'index_user' ?>"><i class="fa fa-circle-o"></i> Pengguna</a></li>
-            <?php } ?>
             <li><a href="<?php echo app_base.'index_kategori' ?>"><i class="fa fa-circle-o"></i> Kategori Barang</a></li>
             <li><a href="<?php echo app_base.'index_barang' ?>"><i class="fa fa-circle-o"></i> Barang</a></li>
             <li><a href="<?php echo app_base.'index_supplier' ?>"><i class="fa fa-circle-o"></i> Supplier</a></li>
           </ul>
         </li>
+        <?php } ?>
         <li class="treeview">
           <a href="#">
             <i class="fa fa-compress"></i> <span>Transaksi</span> <i class="fa fa-angle-left pull-right"></i>

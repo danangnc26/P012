@@ -191,8 +191,10 @@
 
     $('#save_transaksi_penjualan').submit(function(event){
     	event.preventDefault();
-    	// "<?php echo app_base.'add_barang_transaksi_penjualan' ?>"
-    	if($('input[name=jumlah_jual]').val() > $('input[name=stok_saatini]').val()){
+    	var stk = parseInt($('input[name=stok_saatini]').val());
+        var jml = parseInt($('input[name=jumlah_jual]').val());
+        // "<?php echo app_base.'add_barang_transaksi_penjualan' ?>"
+        if(stk < jml){
     		alert('Anda tidak bisa menjual lebih dari '+$('input[name=stok_saatini]').val()+' '+$('input[name=satuan]').val());
     	}else{
 	    	$.post(

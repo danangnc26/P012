@@ -59,11 +59,7 @@
                 </tbody>
               </table>
         </div>
-        <!-- /.box-body -->
-        <div class="box-footer">
-          Footer
-        </div>
-        <!-- /.box-footer-->
+        <!-- /.box-body -->       
       </div>
       <!-- /.box -->
 
@@ -79,7 +75,7 @@
 		      null,
 		      { "bSortable": false}
         	],
-        	"order" : [2, "asc"],
+        	"order" : [0, "asc"],
     });
   });
 </script>

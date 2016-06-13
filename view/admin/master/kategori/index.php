@@ -57,11 +57,7 @@
           	</tbody>
           	</table>
         </div>
-        <!-- /.box-body -->
-        <div class="box-footer">
-          Footer
-        </div>
-        <!-- /.box-footer-->
+        <!-- /.box-body -->        
       </div>
       <!-- /.box -->
 
